@@ -9,4 +9,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Added `parseCron`, `explain`, `nextRuns` and `matches` for Vixie cron expressions with English explanations, IANA time zone scheduling and an explicit DST policy.
 - Initial project structure from the factory utility template.
