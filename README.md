@@ -1,7 +1,6 @@
 # cron-explain
 
-[![npm version](https://img.shields.io/npm/v/@trysac/cron-explain.svg)](https://www.npmjs.com/package/@trysac/cron-explain)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/cron-explain.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u092-cron-explain/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u092-cron-explain/actions/workflows/ci.yml)
 
 Parse Vixie cron expressions, explain them in plain English and compute next run times in IANA time zones with an explicit DST policy.
@@ -12,9 +11,15 @@ Cron expressions are easy to get wrong and hard to read in code review. Teams pa
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/cron-explain
+git clone https://github.com/Trysac/u092-cron-explain.git
+cd u092-cron-explain && npm ci && npm run build
+cd ../your-project && npm install ../u092-cron-explain
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/cron-explain"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations and has no runtime dependencies.
 
